@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Namibia Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/attractions.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Namibia Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html" class="active" data-i18n="attractions">Attractions</a></li>
+                    <li><a href="travel-info.html" data-i18n="travel-info">Travel Info</a></li>
+                    <li><a href="accommodation.html" data-i18n="accommodation">Accommodation</a></li>
+                    <li><a href="about.html" data-i18n="about">About Namibia</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="attractions">Namibia Attractions</h1>
+            <p>Discover the incredible natural wonders and cultural treasures of Namibia</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-group">
+                <label for="regionFilter" data-i18n="filter-by-region">Filter by Region:</label>
+                <select id="regionFilter">
+                    <option value="all" data-i18n="all-regions">All Regions</option>
+                    <option value="north" data-i18n="north">North</option>
+                    <option value="central" data-i18n="central">Central</option>
+                    <option value="south" data-i18n="south">South</option>
+                    <option value="coast" data-i18n="coastal">Coastal</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="categoryFilter" data-i18n="filter-by-category">Filter by Category:</label>
+                <select id="categoryFilter">
+                    <option value="all" data-i18n="all-categories">All Categories</option>
+                    <option value="nature" data-i18n="nature">Nature</option>
+                    <option value="culture" data-i18n="culture">Culture</option>
+                    <option value="adventure" data-i18n="adventure">Adventure</option>
+                    <option value="wildlife" data-i18n="wildlife">Wildlife</option>
+                </select>
+            </div>
+            <button id="resetFilters" class="reset-btn" data-i18n="reset-filters">Reset Filters</button>
+        </div>
+    </section>
+
+    <!-- Attractions Grid -->
+    <section class="attractions-grid-section">
+        <div class="container">
+            <div id="attractionsGrid" class="attractions-grid">
+                <!-- Attractions will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Namibia Tourism Guide</h3>
+                    <p data-i18n="footer-text">Your comprehensive guide to exploring Namibia's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="quick-links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="home">Home</a></li>
+                        <li><a href="attractions.html" data-i18n="attractions">Attractions</a></li>
+                        <li><a href="travel-info.html" data-i18n="travel-info">Travel Info</a></li>
+                        <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="connect-with-us">Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Namibia Tourism Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/attractions.js"></script>
+</body>
+</html>
