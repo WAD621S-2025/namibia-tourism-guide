@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namibia Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Namibia Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-info.html">Travel Info</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="about.html">About Namibia</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Namibia</h1>
+            <p>Experience the breathtaking landscapes and rich culture of Africa's gem</p>
+            <a href="attractions.html" class="cta-button">Explore Attractions</a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container">
+            <h2>Namibia Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="card-image" style="background-image: url('images/namib-desert.jpg');"></div>
+                    <h3>Namib Desert</h3>
+                    <p>Home to the world's oldest desert and highest sand dunes</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="card-image" style="background-image: url('images/etosha.jpg');"></div>
+                    <h3>Etosha National Park</h3>
+                    <p>Premier wildlife destination with diverse animal species</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="card-image" style="background-image: url('images/skeleton-coast.jpg');"></div>
+                    <h3>Skeleton Coast</h3>
+                    <p>Mysterious coastline with shipwrecks and unique ecosystems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Explore Namibia</h2>
+            <div id="interactive-map">
+                <!-- Map will be loaded here via JavaScript -->
+                <div class="map-placeholder">
+                    <p>Interactive map loading...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Namibia Tourism Guide</h3>
+                    <p>Your comprehensive guide to exploring Namibia's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="travel-info.html">Travel Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Namibia Tourism Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+</body>
+</html>

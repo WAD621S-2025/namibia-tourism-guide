@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Information - Namibia Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/travel-info.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Namibia Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-info.html" class="active">Travel Info</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="about.html">About Namibia</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Travel Information</h1>
+            <p>Essential information for planning your trip to Namibia</p>
+        </div>
+    </section>
+
+    <!-- Travel Info Tabs -->
+    <section class="travel-info-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="visa">Visa & Entry</button>
+                <button class="tab-button" data-tab="transport">Transport</button>
+                <button class="tab-button" data-tab="climate">Climate</button>
+                <button class="tab-button" data-tab="health">Health & Safety</button>
+                <button class="tab-button" data-tab="currency">Currency</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Visa & Entry Tab -->
+                <div id="visa" class="tab-pane active">
+                    <h2>Visa & Entry Requirements</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Tourist Visa</h3>
+                            <p>Most visitors can obtain a 90-day tourist visa on arrival. Required documents:</p>
+                            <ul>
+                                <li>Passport valid for at least 6 months</li>
+                                <li>Return or onward ticket</li>
+                                <li>Proof of sufficient funds</li>
+                                <li>Yellow fever certificate if applicable</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Visa-Free Countries</h3>
+                            <p>Citizens of the following countries don't need a visa for stays up to 90 days:</p>
+                            <ul>
+                                <li>United States</li>
+                                <li>United Kingdom</li>
+                                <li>European Union countries</li>
+                                <li>Canada</li>
+                                <li>Australia</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Customs Regulations</h3>
+                            <p>Important customs information:</p>
+                            <ul>
+                                <li>Duty-free allowance: 400 cigarettes, 2L wine, 1L spirits</li>
+                                <li>Firearms require special permit</li>
+                                <li>Strict controls on wildlife products</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Transport Tab -->
+                <div id="transport" class="tab-pane">
+                    <h2>Transportation in Namibia</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Car Rental</h3>
+                            <p>4x4 vehicles recommended for exploring remote areas. Major rental companies available at airports.</p>
+                            <ul>
+                                <li>Drive on the left side</li>
+                                <li>International driver's license required</li>
+                                <li>Comprehensive insurance recommended</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Domestic Flights</h3>
+                            <p>Efficient way to cover long distances between major destinations.</p>
+                            <ul>
+                                <li>Air Namibia domestic routes</li>
+                                <li>Small charter flights available</li>
+                                <li>Book in advance during peak season</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Public Transport</h3>
+                            <p>Limited but available between major towns.</p>
+                            <ul>
+                                <li>Intercape Mainliner buses</li>
+                                <li>Minibus taxis for shorter routes</li>
+                                <li>Train services between major cities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Climate Tab -->
+                <div id="climate" class="tab-pane">
+                    <h2>Climate & Best Time to Visit</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Seasons</h3>
+                            <p>Namibia has distinct dry and wet seasons:</p>
+                            <ul>
+                                <li><strong>Dry Season:</strong> May-October (Best for wildlife)</li>
+                                <li><strong>Wet Season:</strong> November-April (Lush landscapes)</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Temperatures</h3>
+                            <p>Varies by region:</p>
+                            <ul>
+                                <li>Coast: 15-25°C year-round</li>
+                                <li>Desert: Extreme variations (0-40°C)</li>
+                                <li>North: Warmer and more humid</li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3>Packing Tips</h3>
+                            <p>Essential items to pack:</p>
+                            <ul>
+                                <li>Sun protection (hat, sunscreen)</li>
+                                <li>Layered clothing</li>
+                                <li>Comfortable walking shoes</li>
+                                <li>Binoculars for wildlife viewing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more tab content for Health & Safety and Currency -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts -->
+    <section class="emergency-contacts">
+        <div class="container">
+            <h2>Emergency Contacts</h2>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <h3>Police</h3>
+                    <p class="phone-number">10111</p>
+                    <p>Emergency response</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Ambulance</h3>
+                    <p class="phone-number">2032276</p>
+                    <p>Medical emergencies</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Tourist Helpline</h3>
+                    <p class="phone-number">064-404500</p>
+                    <p>Tourist assistance</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Your Embassy</h3>
+                    <p>Contact details for your country's embassy in Windhoek</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Namibia Tourism Guide</h3>
+                    <p>Your comprehensive guide to exploring Namibia's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="travel-info.html">Travel Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Namibia Tourism Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/travel-info.js"></script>
+</body>
+</html>
