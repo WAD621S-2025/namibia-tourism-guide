@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Namibia Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Namibia Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-info.html">Travel Info</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="about.html">About Namibia</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for more information or assistance with your Namibian adventure</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="travel">Travel Planning</option>
+                                <option value="accommodation">Accommodation</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>Namibia Tourism Guide<br>
+                        123 Independence Avenue<br>
+                        Windhoek, Namibia</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+264 61 123 4567</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@namibiatourismguide.com</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>🕒 Office Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                            <a href="#" class="social-icon">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>When is the best time to visit Namibia?</h3>
+                    <p>The dry season (May to October) is best for wildlife viewing, while the wet season (November to April) offers lush landscapes and fewer tourists.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do I need a visa to visit Namibia?</h3>
+                    <p>Most visitors can obtain a 90-day tourist visa on arrival. Check with your local Namibian embassy for specific requirements based on your nationality.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is Namibia safe for tourists?</h3>
+                    <p>Namibia is generally very safe for tourists. However, take normal precautions as you would when traveling anywhere, especially in urban areas.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What vaccinations do I need?</h3>
+                    <p>Recommended vaccinations include Hepatitis A & B, Typhoid, and routine vaccines. A yellow fever certificate is required if arriving from affected countries.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I use credit cards in Namibia?</h3>
+                    <p>Credit cards are widely accepted in cities and major tourist areas, but it's advisable to carry cash for remote areas and smaller establishments.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What is the time zone in Namibia?</h3>
+                    <p>Namibia is in the West Africa Time Zone (WAT), which is UTC+1 during standard time and UTC+2 during daylight saving time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Namibia Tourism Guide</h3>
+                    <p>Your comprehensive guide to exploring Namibia's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="travel-info.html">Travel Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Namibia Tourism Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

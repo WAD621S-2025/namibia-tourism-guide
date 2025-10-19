@@ -1,0 +1,201 @@
+/* About Namibia Page Styles */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../images/about-bg.jpg') no-repeat center center/cover;
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-muted);
+}
+
+/* Quick Facts */
+.quick-facts {
+    padding: 4rem 0;
+    background-color: var(--primary-color);
+}
+
+.quick-facts h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.fact-card {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+}
+
+.fact-card h3 {
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.fact-card p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* History & Culture Section */
+.history-culture {
+    padding: 4rem 0;
+    background-color: var(--secondary-color);
+}
+
+.geography-wildlife {
+    padding: 4rem 0;
+    background-color: var(--primary-color);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.content-grid.reversed {
+    direction: rtl;
+}
+
+.content-grid.reversed > * {
+    direction: ltr;
+}
+
+.content-text h2 {
+    color: var(--highlight-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.content-text h3 {
+    color: var(--text-color);
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+.content-text p {
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.content-image {
+    height: 400px;
+}
+
+.image-placeholder {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Cultural Diversity */
+.cultural-diversity {
+    padding: 4rem 0;
+    background-color: var(--secondary-color);
+}
+
+.cultural-diversity h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+    font-size: 2.5rem;
+}
+
+.cultural-diversity > p {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.culture-card {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.culture-card:hover {
+    transform: translateY(-5px);
+}
+
+.culture-card h3 {
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.culture-card p {
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .content-grid.reversed {
+        direction: ltr;
+    }
+    
+    .content-image {
+        height: 250px;
+        order: -1;
+    }
+    
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .culture-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation - Namibia Tourism Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/accommodation.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Namibia Guide</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-info.html">Travel Info</a></li>
+                    <li><a href="accommodation.html" class="active">Accommodation</a></li>
+                    <li><a href="about.html">About Namibia</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Accommodation</h1>
+            <p>Find the perfect place to stay during your Namibian adventure</p>
+        </div>
+    </section>
+
+    <!-- Accommodation Filters -->
+    <section class="accommodation-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="locationFilter">Location:</label>
+                    <select id="locationFilter">
+                        <option value="all">All Locations</option>
+                        <option value="windhoek">Windhoek</option>
+                        <option value="swakopmund">Swakopmund</option>
+                        <option value="etosha">Etosha Area</option>
+                        <option value="sossusvlei">Sossusvlei</option>
+                        <option value="fish-river">Fish River Canyon</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Accommodation Type:</label>
+                    <select id="typeFilter">
+                        <option value="all">All Types</option>
+                        <option value="hotel">Hotels</option>
+                        <option value="lodge">Lodges</option>
+                        <option value="guesthouse">Guesthouses</option>
+                        <option value="camping">Camping</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceFilter">Price Range:</label>
+                    <select id="priceFilter">
+                        <option value="all">Any Price</option>
+                        <option value="budget">Budget ($)</option>
+                        <option value="midrange">Mid-range ($$)</option>
+                        <option value="luxury">Luxury ($$$)</option>
+                    </select>
+                </div>
+                <button id="resetAccommodationFilters" class="reset-btn">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Listings -->
+    <section class="accommodation-listings">
+        <div class="container">
+            <div id="accommodationGrid" class="accommodation-grid">
+                <!-- Accommodation cards will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Partners -->
+    <section class="booking-partners">
+        <div class="container">
+            <h2>Book Through Our Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <h3>Booking.com</h3>
+                    <p>Wide selection of hotels and guesthouses across Namibia</p>
+                    <a href="https://www.booking.com" target="_blank" class="partner-link">Visit Site →</a>
+                </div>
+                <div class="partner-card">
+                    <h3>Namibia Reservations</h3>
+                    <p>Specialized in Namibian accommodations and tours</p>
+                    <a href="https://www.namibia-reservations.com" target="_blank" class="partner-link">Visit Site →</a>
+                </div>
+                <div class="partner-card">
+                    <h3>Agoda</h3>
+                    <p>Competitive prices for hotels and lodges</p>
+                    <a href="https://www.agoda.com" target="_blank" class="partner-link">Visit Site →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Namibia Tourism Guide</h3>
+                    <p>Your comprehensive guide to exploring Namibia's wonders</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="travel-info.html">Travel Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Namibia Tourism Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/accommodation.js"></script>
+</body>
+</html>
